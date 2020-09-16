@@ -21,7 +21,7 @@ add_message_files(FILES ControllerJointState.msg)
 generate_messages(DEPENDENCIES std_msgs)
 
 # include
-include_directories(include ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
+include_directories(include src ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
 
 catkin_package(
   CATKIN_DEPENDS
@@ -43,6 +43,7 @@ add_library(${PROJECT_NAME}
   src/adaptive_variable_impedance_controller.cpp
   src/passivity_controller.cpp
   src/reactive_architecture.cpp
+  src/ReactiveController.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
