@@ -35,5 +35,10 @@
       Passivity Based Controller
     </description>
   </class>
-</library>
 
+  <class name="arm_controllers/ReactiveController" type="arm_controllers::ReactiveController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      Passivity Based Controller
+    </description>
+  </class>
+</library>
